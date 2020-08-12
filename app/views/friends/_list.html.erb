@@ -1,0 +1,23 @@
+<div class="row">
+  <div class="col-9">
+    <table class="table table-bordered table-hover">
+      <thead>
+        <tr>
+          <th scope="col">First name</th>
+          <th scope="col">Last name</th>
+          <th scope="col">email adress</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% @friendships.each do |friend| %>
+        <tr>
+          <th scope="row"><%= friend.first_name %></th>
+          <td><%= friend.last_name %></td>
+          <td><%= friend.email %></td>
+          <td>placeholder</td>
+        </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
+</div>
